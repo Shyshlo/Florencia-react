@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Tapestry&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* {box-sizing:border-box}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #f4f3ef;
+  font-family: 'Cormorant Garamond', serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerTitle {
   display: flex;
-  flex-direction: column;
+  background-color: #ffbe87;
+  height: 100px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: 0 0 30px #3b4c32 inset; 
+}
+.container {
+
+  display: flex;
+  justify-content: center;
+}
+h1 {
+
+display: flex;
+justify-content: center;
+letter-spacing: 2px;
+font-size: 25px;
+background: linear-gradient(to right, #39491f, #656f2b, #0d3f11 70%);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+text-transform: uppercase;
+margin-bottom: 30px;
+
+
+
+}
+
+h2 {
+  background-color: #f2f1e6;
+  color: #3b4c32;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  
+}
+
+img {
+  box-shadow:  0 1px 4px rgba(0, 0, 0, .3),
+  -23px 0 20px -23px rgba(0, 0, 0, .8),
+  23px 0 20px -23px rgba(0, 0, 0, .8),
+  0 0 40px rgba(0, 0, 0, .1) inset;
+
+}
+/* кнопки Prev и Next */
+
+.slideAllContainer{
+  background-color:#bec9b7;
+}
+
+.slidshowContainer {
+  
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+ left: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.App-link {
-  color: #61dafb;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonVisited {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background-color: #ffbe87;
+  color: #3b4c32;
+  border: none;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0 0 10px #3b4c32 inset; 
 }
+.showMore{
+  border: none;
+  text-decoration: underline;
+  color: #ffbe87;
+  background: white;
+  font-weight: bolder;
+
+}
+p {
+  margin-left: 50px;
+  font-size: 20px;
+
+}
+.source {
+  color: #3b4c32;
+  margin-bottom: 10px;
+
+}
+.deletAll {
+margin-top: 50px;
+margin-bottom: 50px;
+width: 30%;
+  background-color: #647759;;
+  color: #ffbe87;
+  border: none;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0 0 10px  #ffbe87; 
+}
+
